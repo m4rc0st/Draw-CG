@@ -59,6 +59,12 @@ def circulo2(posx, posy, sides, radius):
         glVertex2d(cosine, sine)
     glEnd()
 
+def ponto(x, y):
+    glPointSize(5.0)
+    glBegin(GL_POINTS)
+    glVertex2f(x, y)
+    glEnd()
+
 #CRIANDO QUADRADO
 vertices = ((1, 1),
             (1, -1),
